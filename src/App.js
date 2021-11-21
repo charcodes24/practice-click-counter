@@ -9,9 +9,14 @@ function App() {
     setCounter(counter + 1)
   }
 
+  function decrementCounter() {
+    setCounter(counter - 1)
+  }
+
   return (
     <div className="App">
       <h1>{counter}</h1>
+      <button onClick={decrementCounter}>-</button>
       <button onClick={incrementCounter}>+</button>
     </div>
   );
